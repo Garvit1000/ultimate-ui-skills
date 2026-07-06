@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ultimate UI Taste"
+  short_description: "Research-backed UI, UX, and motion taste"
+  default_prompt: "Use $ultimate-ui-taste to design or review this interface with strong UI, UX, and animation judgment."

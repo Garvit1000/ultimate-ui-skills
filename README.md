@@ -1,5 +1,19 @@
 # Ultimate UI Taste
 
+## Before And After
+
+### Landing Page
+
+| Before | After |
+| --- | --- |
+| ![Landing page before skill training](meadia/Screenshot%202026-07-06%20132047.png) | ![Landing page after skill training](meadia/Screenshot%202026-07-06%20132848.png) |
+
+### Dashboard
+
+| Before | After |
+| --- | --- |
+| ![Dashboard before skill training](meadia/Screenshot%202026-07-06%20132104.png) | ![Dashboard after skill training](meadia/Screenshot%202026-07-06%20132906.png) |
+
 Ultimate UI Taste is an agent instruction pack for reviewing, designing, and improving high-taste user interfaces. It focuses on product intent, visual hierarchy, typography, motion, component semantics, accessibility, state coverage, and implementation resilience.
 
 It is built to improve both new and existing projects. It does not force one visual style. Instead, it calibrates the right taste direction for each product, then applies durable UI, UX, and animation principles.
@@ -76,6 +90,31 @@ Use the folder in whatever format your agent supports:
 - As copied context, starting with `SKILL.md` and loading references only as needed
 
 Agents that support skill folders can register the folder directly. Agents that do not support skill folders can still read `SKILL.md` and the reference files as normal Markdown.
+
+## Acknowledgements
+
+This project is an original instruction pack shaped by studying strong design engineering work, public writing, open source interfaces, and component documentation. The goal is to learn durable principles, not to copy a specific visual style, brand, component library, or author's work.
+
+Primary inspirations and references include:
+
+- Emil Kowalski's writing and design engineering philosophy around motion, polish, and interface feel
+- Jakub Krehel's interface-detail writing, including [Details that make interfaces feel better](https://jakub.kr/writing/details-that-make-interfaces-feel-better)
+- [Impeccable Style](https://impeccable.style/)
+- [Onur's design and engineering bookmarks](https://onur.dev/bookmarks)
+- [Nexus UI](https://nexus-ui.dev/)
+- [Componentry documentation](https://componentry.dev/docs)
+- [Astryx design system](https://astryx.atmeta.com/components)
+- [WatermelonCorp/watermelon-platform](https://github.com/WatermelonCorp/watermelon-platform)
+- [Design.md Nintendo 2001 case study](https://getdesign.md/nintendo-2001/design-md)
+- The public [`ui-ux-pro-max` skill page on Skills.sh](https://www.skills.sh/nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max)
+
+## Copyright And Source Use
+
+No third-party brand, website, component, image, or codebase is claimed as original work here. External materials are credited as inspiration and research sources. This repository should not be treated as a mirror, clone, or substitute for any referenced project.
+
+When this skill discusses patterns from public sources, it should paraphrase the principle and apply it to the user's project. Do not copy proprietary text, assets, layouts, screenshots, or source code from referenced projects unless their license explicitly allows that use and the copied material is attributed according to that license.
+
+Open source references remain governed by their own licenses. Before reusing code from any linked repository or component library, check that project's license and attribution requirements.
 
 ## Design Principles
 

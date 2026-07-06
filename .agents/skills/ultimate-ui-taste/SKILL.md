@@ -23,6 +23,7 @@ Use this skill to design, implement, or review interfaces with strong product co
    - AI slop detection: `references/anti-slop/generated-ui-tells.md`
    - Source examples from Nexus UI, Astryx, and Watermelon: `references/examples/component-libraries.md`
    - Pattern scoring and taste examples: `references/examples/pattern-rubric.md`
+   - Design direction packet: `references/examples/design-system-packet.md`
 6. Build or review with evidence. Prefer existing project primitives and libraries over new abstractions.
 7. Verify responsive layout, keyboard behavior, reduced motion, long content, empty/loading/error states, and visual hierarchy.
 
@@ -37,6 +38,7 @@ Use this mode when improving an existing project, app route, dashboard, landing 
 5. Verify with lint, build, route checks, and visual inspection when available.
 6. If a visible defect comes from CSS, check for broad selectors before changing markup. Decorative elements must use named classes or `data-slot`; never let generic `span`, `strong`, `small`, or `div` rules style semantic text by accident.
 7. For broad redesigns or vague "make it better" requests, score the current UI with `references/examples/pattern-rubric.md` before editing. Fix the lowest scores first.
+8. For new visual directions or major redesigns, draft the compact packet from `references/examples/design-system-packet.md` before choosing colors, type, motion, or layout decoration.
 
 ## Default Judgment
 

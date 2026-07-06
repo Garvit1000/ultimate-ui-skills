@@ -6,6 +6,8 @@ The goal is to turn inspiration into reusable judgment. Do not copy a source's l
 
 Named libraries are evidence, not taste presets. Nexus, Astryx, Watermelon, Componentry, and DESIGN.md examples should teach durable questions: What is the primitive? What state is missing? What does the user need to decide? What motion explains cause and effect? What material direction fits this product? They should not decide the final palette, radius, layout density, type mood, or visual personality.
 
+For a compact pre-build design direction, use `design-system-packet.md`. It turns product type, audience, workflow, risk, and desired feeling into an implementation guide without creating a giant style catalog.
+
 ## Taste Calibration
 
 Before using any source example, choose the product's own taste direction.

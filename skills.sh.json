@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Design",
+      "description": "Taste, UX, motion, and interface review skills.",
+      "skills": ["ultimate-ui-taste"]
+    }
+  ]
+}

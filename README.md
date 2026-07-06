@@ -1,18 +1,20 @@
 # Ultimate UI Taste
 
+[![skills.sh](https://skills.sh/b/Garvit1000/ultimate-ui-skills)](https://skills.sh/Garvit1000/ultimate-ui-skills)
+
 ## Before And After
 
 ### Landing Page
 
 | Before | After |
 | --- | --- |
-| ![Landing page before skill training](meadia/Screenshot%202026-07-06%20132047.png) | ![Landing page after skill training](meadia/Screenshot%202026-07-06%20132848.png) |
+| ![Landing page before skill training](media/Screenshot%202026-07-06%20132047.png) | ![Landing page after skill training](media/Screenshot%202026-07-06%20132848.png) |
 
 ### Dashboard
 
 | Before | After |
 | --- | --- |
-| ![Dashboard before skill training](meadia/Screenshot%202026-07-06%20132104.png) | ![Dashboard after skill training](meadia/Screenshot%202026-07-06%20132906.png) |
+| ![Dashboard before skill training](media/Screenshot%202026-07-06%20132104.png) | ![Dashboard after skill training](media/Screenshot%202026-07-06%20132906.png) |
 
 Ultimate UI Taste is an agent instruction pack for reviewing, designing, and improving high-taste user interfaces. It focuses on product intent, visual hierarchy, typography, motion, component semantics, accessibility, state coverage, and implementation resilience.
 
@@ -82,6 +84,12 @@ Use the Ultimate UI Taste instructions to audit the current UI. Identify what lo
 This workflow prevents blind restyling. The goal is not to make every project look the same. The goal is to make each project feel intentional, usable, and fit for its own audience.
 
 ## Install
+
+From Skills.sh:
+
+```text
+npx skills add Garvit1000/ultimate-ui-skills
+```
 
 Use the folder in whatever format your agent supports:
 

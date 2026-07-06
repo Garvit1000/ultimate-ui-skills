@@ -1,7 +1,5 @@
 # Ultimate UI Taste
 
-[![skills.sh](https://skills.sh/b/Garvit1000/ultimate-ui-skills)](https://skills.sh/Garvit1000/ultimate-ui-skills)
-
 ## Before And After
 
 ### Landing Page

@@ -16,12 +16,15 @@ Create a design system packet before editing when:
 
 Skip the packet for small bug fixes, single-component repairs, copy edits, or narrow accessibility fixes.
 
+If the project already has `DESIGN.md`, brand guidelines, design tokens, theme config, Figma exports, or component documentation, do not invent a replacement packet. Read the existing source first, extract only the constraints needed for the task, and identify gaps or contradictions. Use this packet only to fill missing context.
+
 ## Packet Template
 
 Keep the packet compact. Fill only what helps the current task.
 
 ```yaml
 design_system_packet:
+  source_of_truth:
   work_mode:
   product_type:
   audience:
@@ -107,12 +110,13 @@ design_system_packet:
 
 ## How To Use It
 
-1. Draft the packet before choosing colors, fonts, animation, or layout decoration.
-2. Compare the current UI to the packet.
-3. Name the biggest mismatches.
-4. If the concept is wrong, replace the surface archetype before polishing style.
-5. Patch the smallest coherent area that moves the UI toward the packet.
-6. Re-check the packet after implementation. If the product context changed, revise the packet instead of forcing the original direction.
+1. Check for existing design source files before drafting the packet.
+2. Draft or summarize the packet before choosing colors, fonts, animation, or layout decoration.
+3. Compare the current UI to the packet.
+4. Name the biggest mismatches.
+5. If the concept is wrong, replace the surface archetype before polishing style.
+6. Patch the smallest coherent area that moves the UI toward the packet.
+7. Re-check the packet after implementation. If the product context changed, revise the packet instead of forcing the original direction.
 
 ## What Not To Do
 

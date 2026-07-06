@@ -111,6 +111,7 @@ Primary inspirations and references include:
 - [Componentry documentation](https://componentry.dev/docs)
 - [Astryx design system](https://astryx.atmeta.com/components)
 - [WatermelonCorp/watermelon-platform](https://github.com/WatermelonCorp/watermelon-platform)
+- [google-labs-code/design.md](https://github.com/google-labs-code/design.md)
 - [Design.md Nintendo 2001 case study](https://getdesign.md/nintendo-2001/design-md)
 - The public [`ui-ux-pro-max` skill page on Skills.sh](https://www.skills.sh/nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max)
 

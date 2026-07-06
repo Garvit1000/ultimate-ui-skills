@@ -12,10 +12,11 @@ Use this skill to design, implement, or review interfaces with strong product co
 1. Identify the lane: `brand`, `product`, `dashboard`, `docs`, `chat`, `editor`, `game`, or `component-library`.
 2. Identify the work mode: `scratch`, `revamp`, `polish`, or `critique-only`.
 3. Read the local app before making broad changes. Infer its framework, primitives, tokens, visual language, and constraints.
-4. Calibrate taste before styling: product category, audience, brand tone, density, desired emotion, and what would feel inappropriate for this project.
-5. Establish intent before styling: audience, primary workflow, first-screen hierarchy, expected frequency of use, and failure states.
-6. Choose the concept before pixels. If the current UI is generic or fake, fix what the surface should show before changing color, radius, shadow, or spacing.
-7. Select references only when needed:
+4. If the project has `DESIGN.md`, brand guidelines, token files, theme config, Figma exports, or component docs, treat them as source-of-truth inputs before inventing a new direction.
+5. Calibrate taste before styling: product category, audience, brand tone, density, desired emotion, and what would feel inappropriate for this project.
+6. Establish intent before styling: audience, primary workflow, first-screen hierarchy, expected frequency of use, and failure states.
+7. Choose the concept before pixels. If the current UI is generic or fake, fix what the surface should show before changing color, radius, shadow, or spacing.
+8. Select references only when needed:
    - Context setup: `references/context.md`
    - Animation and motion: `references/animations/emil-motion.md`
    - Component choice and AI UI primitives: `references/ui/components.md`
@@ -26,8 +27,8 @@ Use this skill to design, implement, or review interfaces with strong product co
    - Source examples from Nexus UI, Astryx, and Watermelon: `references/examples/component-libraries.md`
    - Pattern scoring and taste examples: `references/examples/pattern-rubric.md`
    - Design direction packet: `references/examples/design-system-packet.md`
-8. Build or review with evidence. Prefer existing project primitives and libraries over new abstractions.
-9. Verify responsive layout, keyboard behavior, reduced motion, long content, empty/loading/error states, and visual hierarchy. If visual output matters, inspect the rendered screen before calling the work done.
+9. Build or review with evidence. Prefer existing project primitives and libraries over new abstractions.
+10. Verify responsive layout, keyboard behavior, reduced motion, long content, empty/loading/error states, and visual hierarchy. If visual output matters, inspect the rendered screen before calling the work done.
 
 ## Work Modes
 
@@ -51,7 +52,7 @@ Use this mode when improving an existing project, app route, dashboard, landing 
 5. Verify with lint, build, route checks, and visual inspection when available.
 6. If a visible defect comes from CSS, check for broad selectors before changing markup. Decorative elements must use named classes or `data-slot`; never let generic `span`, `strong`, `small`, or `div` rules style semantic text by accident.
 7. For broad redesigns or vague "make it better" requests, score the current UI with `references/examples/pattern-rubric.md` before editing. Fix the lowest scores first.
-8. For new visual directions or major redesigns, draft the compact packet from `references/examples/design-system-packet.md` before choosing colors, type, motion, or layout decoration.
+8. For new visual directions or major redesigns, draft the compact packet from `references/examples/design-system-packet.md` before choosing colors, type, motion, or layout decoration. If the project already has a design source of truth, summarize and apply it instead of replacing it.
 
 ## Default Judgment
 

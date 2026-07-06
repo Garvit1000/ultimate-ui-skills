@@ -125,6 +125,10 @@ Do not default to purple-blue gradients, beige "premium" pages, or cyan-on-dark 
 - Align text, controls, and data edges. A polished UI often comes from clean alignment more than decoration.
 - Align optically when geometry looks wrong. Icons, play triangles, asymmetric glyphs, and icon-plus-text buttons may need adjusted padding, margin, or SVG viewBox so they feel centered.
 - In icon-plus-text buttons, reduce the padding on the icon side only when the icon's visual weight makes the content look off-center.
+- Fit diagrams to their containers. Beams, connector lines, gauges, charts, topology maps, and timelines should use container-relative units, stable aspect ratios, and bounded line lengths.
+- Never let a visual proof overflow a fixed-height card. Increase the card height, simplify the diagram, or change the archetype.
+- Give mobile views a real layout, not a shrunken desktop diagram. Use stacked timelines, compact lists, simplified gauges, or horizontal scroll with a visible affordance.
+- Check sets together. Repeated cards can look acceptable one by one and still fail as a monotonous collection.
 
 ```css
 .button-with-icon {

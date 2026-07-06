@@ -22,6 +22,7 @@ Keep the packet compact. Fill only what helps the current task.
 
 ```yaml
 design_system_packet:
+  work_mode:
   product_type:
   audience:
   primary_workflow:
@@ -33,6 +34,7 @@ design_system_packet:
     sections:
     primary_action:
     proof_or_feedback:
+    product_archetypes:
   taste_direction:
     visual_material:
     density:
@@ -78,6 +80,7 @@ design_system_packet:
     sections: summary strip, queue, detail drawer, audit trail
     primary_action: open selected case
     proof_or_feedback: last refresh time, source coverage, resolution state
+    product_archetypes: exception queue, sortable table, audit trail, risk trend
   taste_direction:
     visual_material: quiet operational system, not marketing page
     density: high but scannable
@@ -107,13 +110,16 @@ design_system_packet:
 1. Draft the packet before choosing colors, fonts, animation, or layout decoration.
 2. Compare the current UI to the packet.
 3. Name the biggest mismatches.
-4. Patch the smallest coherent area that moves the UI toward the packet.
-5. Re-check the packet after implementation. If the product context changed, revise the packet instead of forcing the original direction.
+4. If the concept is wrong, replace the surface archetype before polishing style.
+5. Patch the smallest coherent area that moves the UI toward the packet.
+6. Re-check the packet after implementation. If the product context changed, revise the packet instead of forcing the original direction.
 
 ## What Not To Do
 
 - Do not output a large style encyclopedia.
 - Do not pick a named aesthetic because it sounds premium.
 - Do not assign palettes or font pairings without explaining their role.
+- Do not invent fake live data, fake status, or fake operational details to make the packet feel specific.
+- Do not use the same preview/card archetype for every product proof unless every proof has the same job.
 - Do not let the packet replace real UI verification.
 - Do not apply category rules mechanically when the product has a clear reason to differ.

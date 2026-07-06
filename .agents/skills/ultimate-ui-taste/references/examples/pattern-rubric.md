@@ -36,6 +36,19 @@ Examples:
 
 Ask "fit for what?" before "does it look good?" A beautiful wrong-style screen is still bad UI.
 
+## Mode Selection
+
+Choose the work mode before scoring:
+
+| Mode | Main question | What to do first |
+| --- | --- | --- |
+| Scratch | What should this product surface prove? | Pick product-specific archetypes and honest content |
+| Revamp | Is the current concept the right thing to show? | Replace weak concepts before styling details |
+| Polish | Is the concept right but execution rough? | Fix typography, spacing, fit, motion, state coverage, and selectors |
+| Critique-only | What direction should the next edit take? | Rank defects by impact and explain the repair path |
+
+Do not let a polish task become a redesign unless the concept is failing. Do not let a revamp become recoloring if the concept is fake, generic, or decorative.
+
 ## UI Taste Scorecard
 
 Score each area from 1 to 5 before a major redesign. Fix 1s and 2s first.
@@ -51,6 +64,9 @@ Score each area from 1 to 5 before a major redesign. Fix 1s and 2s first.
 | State coverage | Only happy path | Some empty/loading/error states | Default, hover, focus, active, loading, empty, error, disabled, long content, mobile, reduced motion |
 | Motion | Decorative, bouncy, or slow | Mostly restrained | Cause-and-effect motion, interruptible transitions, quiet exits, reduced-motion variant |
 | Distinctiveness | Could belong to any SaaS | Some domain tone | Visual language follows the product's material, era, audience, or workflow |
+| Authenticity | Fake liveness, fake data, placeholder icons | Mostly plausible content | Honest data framing, meaningful artifacts, no fake live theater |
+| Concept fit | Surface is decorative or wrong for the product | Surface loosely supports the task | Chosen archetype directly answers the user's decision |
+| Set variety | Every module repeats the same card pattern | Some variation | Each module uses the right artifact: table, timeline, gauge, queue, health board, topology, preview, or log |
 | Implementation resilience | Broad selectors, layout shift, magic values | Mostly stable | Named slots, scoped selectors, stable dimensions, keyboard and responsive checks |
 | Taste fit | Borrowed library aesthetic | Some project-specific choices | The look feels inevitable for this product and audience |
 
@@ -292,10 +308,12 @@ Use this when the project needs identity. Do not invent decorative chrome withou
 Use this mini-protocol for existing projects:
 
 ```text
-1. Identify the lane and material direction.
+1. Identify the lane, work mode, and material direction.
 2. Score the page with the UI Taste Scorecard.
 3. Name the top 3 defects, with source selectors or components.
-4. Patch the smallest coherent area.
-5. Verify: lint/build, responsive, keyboard, long content, reduced motion.
-6. Report before/after in a compact table.
+4. Classify each defect as concept, structure, or polish.
+5. If concept fails, choose a better product archetype before styling.
+6. Patch the smallest coherent area that fixes the real defect.
+7. Verify: lint/build, responsive, keyboard, long content, reduced motion, visual fit.
+8. Report before/after in a compact table.
 ```

@@ -21,6 +21,9 @@ Reject or justify:
 - Decorative horizontal lines between sections when spacing alone would separate them.
 - Background grids or technical linework used as automatic decoration.
 - Inconsistent font families or default-looking bold text inside small cards.
+- A set of cards where every item has the same shape, same icon position, same metric treatment, and no distinct product artifact.
+- Initials used as icons, such as two-letter tiles for people, products, vendors, or features.
+- Generic glyphs where a recognizable entity needs a real mark, product screenshot, seal, file type, or domain-specific artifact.
 
 ## Motion Tells
 
@@ -35,6 +38,25 @@ Reject or justify:
 - Layout property animation.
 - Page-load animation on elements that should be stable.
 - Keyboard-triggered animation.
+- Pulsing "live" dots on static content.
+- Auto-refresh, online, connected, verified, or all-healthy motion when there is no real live state.
+
+## Authenticity Tells
+
+Reject or reframe:
+
+- Fake hostnames, IP addresses, ticket IDs, incident IDs, user IDs, or environment names invented only to look technical.
+- Fake live counts such as "3 healthy / 2 issues" when the page is not connected to data.
+- Static mockups that claim "Live", "Online", "Verified", "Auto-refresh", or "All healthy" without a real source or state.
+- Security, compliance, finance, or operations dashboards that show decorative status theater instead of a real artifact: incident timeline, health board, SLA gauge, audit log, queue, comparison table, policy matrix, topology, or source coverage.
+
+Allowed:
+
+- Representative aggregate numbers when the UI clearly frames them as sample, demo, forecast, or placeholder data.
+- Plausible product states when they support the workflow and are not pretending to be live infrastructure.
+- Real logos or marks only when their license and context allow use. Otherwise use text labels, file badges, product screenshots, or neutral domain artifacts.
+
+Rule: invented specificity is worse than honest abstraction.
 
 ## Copy Tells
 
@@ -89,6 +111,39 @@ Better page:
 <PricingOrAdoptionPath />
 ```
 
+## Concept Tells
+
+Restyling does not fix a weak concept. Before changing palette, radius, shadows, or animation, ask what the surface should honestly show.
+
+Weak:
+
+```text
+Three identical cards with icons and vague statuses.
+```
+
+Better:
+
+```text
+One incident timeline, one SLA gauge, and one health board because each answers a different operational question.
+```
+
+Rule: if the component is trying to look important but does not change what the user can decide, replace the concept.
+
+## Collection Variety
+
+When a page shows multiple proof cards, dashboard modules, or product previews, vary the archetype by job:
+
+- Status page: uptime, outage state, region, affected service.
+- Incident timeline: timestamp, actor, event, resolution.
+- Health board: system, status, owner, last check.
+- SLA gauge: target, actual, breach risk, time window.
+- Comparison table: rows, tradeoffs, decision criteria.
+- Queue: priority, assignee, age, next action.
+- Audit log: event, actor, source, evidence.
+- Topology or beam diagram: relation, path, dependency, direction.
+
+If three cards share the same visual grammar, check whether the product actually has three different concepts or just one repeated template.
+
 ## Audit Questions
 
 1. Could this screen belong to any startup?
@@ -100,3 +155,6 @@ Better page:
 7. Would removing decorative lines make the layout cleaner?
 8. Does any text look like browser-default bold rather than an intentional type style?
 9. Could a broad selector such as `.card span` or `.row strong` accidentally style semantic copy as decoration?
+10. Is any data pretending to be live, connected, verified, or operational without a real source?
+11. Are repeated modules using the same card shape because it is correct, or because no better archetype was chosen?
+12. Could the same layout belong to any other product with only text swapped?

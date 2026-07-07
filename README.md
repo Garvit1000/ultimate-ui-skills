@@ -14,6 +14,12 @@
 | --- | --- |
 | ![Dashboard before skill training](media/Screenshot%202026-07-06%20132104.png) | ![Dashboard after skill training](media/Screenshot%202026-07-06%20132906.png) |
 
+### Ecommerce Dashboard
+
+| Before | After |
+| --- | --- |
+| ![Ecommerce dashboard before skill training](media/Screenshot%202026-07-07%20123258.png) | ![Ecommerce dashboard after skill training](media/Screenshot%202026-07-07%20123353.png) |
+
 Ultimate UI Taste is an agent instruction pack for reviewing, designing, and improving high-taste user interfaces. It focuses on product intent, visual hierarchy, typography, motion, component semantics, accessibility, state coverage, and implementation resilience.
 
 It is built to improve both new and existing projects. It does not force one visual style. Instead, it calibrates the right taste direction for each product, then applies durable UI, UX, and animation principles.

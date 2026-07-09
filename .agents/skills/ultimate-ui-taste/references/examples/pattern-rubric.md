@@ -315,5 +315,5 @@ Use this mini-protocol for existing projects:
 5. If concept fails, choose a better product archetype before styling.
 6. Patch the smallest coherent area that fixes the real defect.
 7. Verify: lint/build, responsive, keyboard, long content, reduced motion, visual fit.
-8. Report before/after in a compact table.
+8. Report before/after in a compact table. For code reviews, include file:line, severity, issue, and fix.
 ```

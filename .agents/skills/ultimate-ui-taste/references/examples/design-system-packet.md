@@ -18,6 +18,8 @@ Skip the packet for small bug fixes, single-component repairs, copy edits, or na
 
 If the project already has `DESIGN.md`, brand guidelines, design tokens, theme config, Figma exports, or component documentation, do not invent a replacement packet. Read the existing source first, extract only the constraints needed for the task, and identify gaps or contradictions. Use this packet only to fill missing context.
 
+If the user provides an inspiration URL or reference site, extract primitives only: color roles, type roles, spacing rhythm, radius, shadows, density, motion character, and product patterns. Treat the result as a starting point, not a source to copy. Do not treat one page as proof of a whole design system, and do not modify app code from a third-party reference without explicit confirmation.
+
 ## Packet Template
 
 Keep the packet compact. Fill only what helps the current task.
@@ -25,6 +27,7 @@ Keep the packet compact. Fill only what helps the current task.
 ```yaml
 design_system_packet:
   source_of_truth:
+  inspiration_sources:
   work_mode:
   product_type:
   audience:

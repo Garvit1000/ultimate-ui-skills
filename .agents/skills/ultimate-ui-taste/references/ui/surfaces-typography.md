@@ -112,6 +112,8 @@ Avoid one-note palettes. A good palette usually has:
 
 Do not default to purple-blue gradients, beige "premium" pages, or cyan-on-dark "AI" surfaces.
 
+When creating a new palette, prefer perceptual color decisions over hand-picked hex ramps. OKLCH is a good default when the project supports it: keep hue stable across ramps, adjust lightness first to fix contrast, clamp high chroma to the target gamut, and avoid dark-mode colors that are unrelated to the light palette. If the project already uses hex, RGB, HSL, or named tokens, preserve the local format unless changing it is part of the task.
+
 ## Layout Detail
 
 - Use stable dimensions for repeated controls, tiles, boards, and fixed-format panels.

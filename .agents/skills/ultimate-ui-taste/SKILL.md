@@ -98,3 +98,9 @@ When reviewing or explaining changes, lead with concrete fixes. Use tables for b
 | Motion | `transition: all 300ms ease-in` | `transition: opacity 160ms var(--ease-out), transform 160ms var(--ease-out)` | Faster, intentional, and avoids accidental layout animation |
 
 Keep summaries short. Cite local files when possible.
+
+For existing project audits, include file and line references whenever source code is available:
+
+| Severity | File | Issue | Fix |
+| --- | --- | --- | --- |
+| High | `app/dashboard/page.tsx:42` | Metric card lacks time window and denominator | Add window, comparison baseline, and denominator text |

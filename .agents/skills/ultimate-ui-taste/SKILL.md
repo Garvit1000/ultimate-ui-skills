@@ -19,6 +19,7 @@ Use this skill to design, implement, or review interfaces with strong product co
 8. Select references only when needed:
    - Context setup: `references/context.md`
    - Animation and motion: `references/animations/emil-motion.md`
+   - Gesture, sheet, drag, swipe, spring, and translucent material behavior: `references/animations/fluid-interfaces.md`
    - Component choice and AI UI primitives: `references/ui/components.md`
    - Surfaces, typography, and visual detail: `references/ui/surfaces-typography.md`
    - Dashboards and AI/product screens: `references/ui/dashboards-ai.md`

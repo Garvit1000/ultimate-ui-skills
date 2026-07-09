@@ -31,6 +31,7 @@ It is built to improve both new and existing projects. It does not force one vis
 - AI chat and agent interfaces
 - Component libraries and preview systems
 - Motion systems, transitions, drawers, popovers, and icon states
+- Fluid gesture UI: sheets, drawers, swipe, drag, carousels, springs, and translucent chrome
 - Existing project audits and design repair
 - Actionable `file:line` UI reviews with severity, issue, and fix
 - Inspiration-site analysis without copying source visuals or code
@@ -44,6 +45,7 @@ The skill now has sharper rules for three common failure points:
 - Color: use perceptual color thinking when creating new palettes. OKLCH is preferred when the project supports it, with contrast fixed through lightness before changing hue or chroma.
 - Review output: existing project audits should cite `file:line` when source code is available, then name severity, issue, and fix.
 - Inspiration sources: reference sites should be reduced to primitives such as color roles, type roles, spacing, radius, shadows, density, motion character, and product patterns. They are not permission to clone a page or treat one screen as a full design system.
+- Gesture motion: drag, swipe, sheet, and carousel interactions should track the pointer, inherit release velocity, remain interruptible, and provide reduced-motion and reduced-transparency fallbacks.
 
 ## Repository Structure
 
@@ -121,6 +123,7 @@ This project is an original instruction pack shaped by studying strong design en
 Primary inspirations and references include:
 
 - Emil Kowalski's writing and design engineering philosophy around motion, polish, and interface feel
+- Emil Kowalski's `apple-design` skill on fluid interfaces and Apple-style motion foundations
 - Jakub Krehel's interface-detail writing, including [Details that make interfaces feel better](https://jakub.kr/writing/details-that-make-interfaces-feel-better)
 - [Impeccable Style](https://impeccable.style/)
 - [Onur's design and engineering bookmarks](https://onur.dev/bookmarks)

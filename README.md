@@ -32,7 +32,18 @@ It is built to improve both new and existing projects. It does not force one vis
 - Component libraries and preview systems
 - Motion systems, transitions, drawers, popovers, and icon states
 - Existing project audits and design repair
+- Actionable `file:line` UI reviews with severity, issue, and fix
+- Inspiration-site analysis without copying source visuals or code
+- Perceptual color discipline for contrast, palettes, and dark mode
 - Detecting generic AI-generated UI patterns
+
+## Current Focus
+
+The skill now has sharper rules for three common failure points:
+
+- Color: use perceptual color thinking when creating new palettes. OKLCH is preferred when the project supports it, with contrast fixed through lightness before changing hue or chroma.
+- Review output: existing project audits should cite `file:line` when source code is available, then name severity, issue, and fix.
+- Inspiration sources: reference sites should be reduced to primitives such as color roles, type roles, spacing, radius, shadows, density, motion character, and product patterns. They are not permission to clone a page or treat one screen as a full design system.
 
 ## Repository Structure
 
@@ -74,7 +85,7 @@ Use the Ultimate UI Taste instructions to redesign this landing page. First cali
 For an existing app:
 
 ```text
-Use the Ultimate UI Taste instructions to audit the current UI. Identify what looks generic or AI-generated, explain the highest-impact issues, then patch the smallest coherent area.
+Use the Ultimate UI Taste instructions to audit the current UI. Identify what looks generic or AI-generated, cite file:line findings when source is available, explain the highest-impact issues, then patch the smallest coherent area.
 ```
 
 ## Recommended Workflow
@@ -118,6 +129,11 @@ Primary inspirations and references include:
 - [Astryx design system](https://astryx.atmeta.com/components)
 - [WatermelonCorp/watermelon-platform](https://github.com/WatermelonCorp/watermelon-platform)
 - [google-labs-code/design.md](https://github.com/google-labs-code/design.md)
+- [Recent.design skills directory](https://recent.design/skills)
+- [extract-design-system](https://github.com/arvindrk/extract-design-system)
+- [oklch-skill](https://github.com/jakubkrehel/oklch-skill)
+- [userinterface-wiki](https://github.com/raphaelsalaja/userinterface-wiki)
+- [Vercel agent skills](https://github.com/vercel-labs/agent-skills)
 - [Design.md Nintendo 2001 case study](https://getdesign.md/nintendo-2001/design-md)
 - The public [`ui-ux-pro-max` skill page on Skills.sh](https://www.skills.sh/nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max)
 
@@ -138,4 +154,6 @@ Open source references remain governed by their own licenses. Before reusing cod
 - Keep typography deliberate and consistent.
 - Avoid generic AI/SaaS visual habits.
 - Preserve project identity when improving existing work.
+- Treat reference sites as research inputs, not clone targets.
+- Prefer actionable review findings over vague taste commentary.
 - Verify behavior, not just screenshots.

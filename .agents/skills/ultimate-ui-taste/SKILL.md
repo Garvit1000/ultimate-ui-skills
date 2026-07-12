@@ -12,13 +12,15 @@ Use this skill to design, implement, or review interfaces with strong product co
 1. Identify the lane: `brand`, `product`, `dashboard`, `docs`, `chat`, `editor`, `game`, or `component-library`.
 2. Identify the work mode: `scratch`, `revamp`, `polish`, or `critique-only`.
 3. Read the local app before making broad changes. Infer its framework, primitives, tokens, visual language, and constraints.
-4. If the project has `DESIGN.md`, brand guidelines, token files, theme config, Figma exports, or component docs, treat them as source-of-truth inputs before inventing a new direction.
-5. Calibrate taste before styling: product category, audience, brand tone, density, desired emotion, and what would feel inappropriate for this project.
-6. Establish intent before styling: audience, primary workflow, first-screen hierarchy, expected frequency of use, and failure states.
-7. Choose the concept before pixels. If the current UI is generic or fake, fix what the surface should show before changing color, radius, shadow, or spacing.
-8. Select references only when needed:
+4. Check the dependency manifest before importing a UI, icon, chart, or motion library. Reuse installed packages when they fit; add a dependency only when the task requires it.
+5. If the project has `DESIGN.md`, brand guidelines, token files, theme config, Figma exports, or component docs, treat them as source-of-truth inputs before inventing a new direction.
+6. Calibrate taste before styling: product category, audience, brand tone, density, desired emotion, and what would feel inappropriate for this project.
+7. Establish intent before styling: audience, primary workflow, first-screen hierarchy, expected frequency of use, and failure states.
+8. Choose the concept before pixels. If the current UI is generic or fake, fix what the surface should show before changing color, radius, shadow, or spacing.
+9. Select references only when needed:
    - Context setup: `references/context.md`
    - Animation and motion: `references/animations/emil-motion.md`
+   - Motion audits and implementation plans: `references/animations/animation-audit.md`
    - Gesture, sheet, drag, swipe, spring, and translucent material behavior: `references/animations/fluid-interfaces.md`
    - Component choice and AI UI primitives: `references/ui/components.md`
    - Surfaces, typography, and visual detail: `references/ui/surfaces-typography.md`
@@ -28,8 +30,8 @@ Use this skill to design, implement, or review interfaces with strong product co
    - Source examples from Nexus UI, Astryx, and Watermelon: `references/examples/component-libraries.md`
    - Pattern scoring and taste examples: `references/examples/pattern-rubric.md`
    - Design direction packet: `references/examples/design-system-packet.md`
-9. Build or review with evidence. Prefer existing project primitives and libraries over new abstractions.
-10. Verify responsive layout, keyboard behavior, reduced motion, long content, empty/loading/error states, and visual hierarchy. If visual output matters, inspect the rendered screen before calling the work done.
+10. Build or review with evidence. Prefer existing project primitives and libraries over new abstractions.
+11. Verify responsive layout, keyboard behavior, reduced motion, long content, empty/loading/error states, and visual hierarchy. If visual output matters, inspect the rendered screen before calling the work done.
 
 ## Work Modes
 
@@ -50,10 +52,11 @@ Use this mode when improving an existing project, app route, dashboard, landing 
 2. Identify the target screens and current failure modes. When possible, compare screenshots or browser output against source code.
 3. Review before editing. List the highest-impact issues first: wrong concept, fake data, fake liveness, repeated archetypes, typography inconsistency, selector leakage, spacing rhythm, state coverage, hierarchy, accessibility, motion intent, and responsive risk.
 4. Decide whether the issue is concept, structure, or polish. Patch the smallest coherent area only after the concept is correct. Preserve the existing product language and system primitives when they fit the product.
-5. Verify with lint, build, route checks, and visual inspection when available.
-6. If a visible defect comes from CSS, check for broad selectors before changing markup. Decorative elements must use named classes or `data-slot`; never let generic `span`, `strong`, `small`, or `div` rules style semantic text by accident.
-7. For broad redesigns or vague "make it better" requests, score the current UI with `references/examples/pattern-rubric.md` before editing. Fix the lowest scores first.
-8. For new visual directions or major redesigns, draft the compact packet from `references/examples/design-system-packet.md` before choosing colors, type, motion, or layout decoration. If the project already has a design source of truth, summarize and apply it instead of replacing it.
+5. Preserve working content, routes, workflows, accessibility behavior, metadata, SEO, analytics hooks, and integrations unless changing them is explicitly in scope. A visual revamp must not silently break product behavior or discoverability.
+6. Verify with lint, build, route checks, and visual inspection when available.
+7. If a visible defect comes from CSS, check for broad selectors before changing markup. Decorative elements must use named classes or `data-slot`; never let generic `span`, `strong`, `small`, or `div` rules style semantic text by accident.
+8. For broad redesigns or vague "make it better" requests, score the current UI with `references/examples/pattern-rubric.md` before editing. Fix the lowest scores first.
+9. For new visual directions or major redesigns, draft the compact packet from `references/examples/design-system-packet.md` before choosing colors, type, motion, or layout decoration. If the project already has a design source of truth, summarize and apply it instead of replacing it.
 
 ## Default Judgment
 
@@ -76,6 +79,7 @@ Good taste is not one visual style. A banking dashboard, game lobby, AI chat, fa
 - Do not use fake liveness theater: pulsing "Live", "Online", "Verified", or "Connected" badges unless there is actual live state or a product reason to show status.
 - Do not use initials as icons. Use meaningful icons, real product or brand marks when legally allowed, or remove the icon.
 - Do not repeat the same card shape across a set when the items represent different concepts. If three cards share the same icon-row pattern, at least two probably need a stronger archetype.
+- Do not put every idea in a rounded card or panel. A container must improve grouping, hierarchy, comparison, interaction, or state. If it only makes content look designed, remove it and use spacing, alignment, a list, a table, an inline row, a sidebar, or an unframed section.
 - Do not make every project look like a named component library or inspiration source. Use references for principles, not aesthetic cloning.
 - Do not use emojis or em dashes in UI copy, documentation, labels, or generated content unless the user explicitly asks for them. Use commas, periods, colons, parentheses, or a plain hyphen instead.
 - Do not add decorative horizontal divider lines, background grids, or technical linework by reflex. Add a line only when it clarifies grouping, hierarchy, or measurement.
@@ -87,6 +91,7 @@ Good taste is not one visual style. A banking dashboard, game lobby, AI chat, fa
 - Icon-only buttons require accessible names.
 - Product dashboards should be dense, quiet, scannable, and stateful. Landing pages may be more expressive, but still need real product signal.
 - Keep typography internally consistent. Metadata rows, labels, card titles, and small text should use the same font family, deliberate weights, and stable line-height.
+- Keep radius and accent-color logic coherent within each surface. Allow different roles only when the system can explain them, such as tighter inputs inside softer panels or semantic colors reserved for status.
 - Keep spacing internally consistent, but not mechanical. Use a deliberate spacing scale, align related edges, and avoid adding divider lines when spacing and grouping are enough.
 - Avoid broad descendant selectors for mixed content. Prefer named slots such as `.workflow-dot`, `.workflow-status`, `[data-slot="status"]`, and `[data-slot="icon"]` so decorative styles cannot leak into copy.
 

@@ -29,9 +29,9 @@ figcaption {
 
 Rules:
 
-- Use `text-wrap: balance` for headings and short hero copy.
-- Use `text-wrap: pretty` for short-to-medium body text.
-- Use tabular numbers for changing counters, prices, timers, scores, dashboard values, and table numeric columns.
+- Use `text-wrap: balance` for headings and short hero copy only. Browsers limit balancing to short blocks, so do not apply it to long prose.
+- Use `text-wrap: pretty` for short-to-medium body text. Leave long-form text, code, and preformatted content at normal wrapping.
+- Use tabular numbers for changing counters, prices, timers, scores, dashboard values, and table numeric columns. Verify the chosen font because tabular variants can noticeably reshape digits.
 - Avoid wide letter spacing on body text.
 - Avoid tiny text in dashboards unless it is secondary metadata.
 - Avoid browser-default-looking `strong` and `small` pairings in cards. Style title, metadata, and secondary text deliberately with a shared font family, clear line-height, and restrained weights.

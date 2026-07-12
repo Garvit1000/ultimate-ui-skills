@@ -13,6 +13,7 @@ Reject or justify:
 - Random glow, blur, or bokeh backgrounds.
 - Oversized rounded cards everywhere.
 - Cards inside cards.
+- Containers that add no grouping, hierarchy, comparison, interaction, or state.
 - Repeated icon-card grids.
 - Hero metric trio as filler.
 - Beige/cream "tasteful" palette by reflex.
@@ -90,6 +91,8 @@ Better: Review agent-built interfaces before they ship.
 ```
 
 ## Structural Tells
+
+Container slop is not fixed by changing the radius. Remove a box when spacing, alignment, a list, a table, an inline row, a sidebar, a timeline, or an unframed section communicates the structure more clearly. Keep a container when it creates a real region, interaction boundary, comparison unit, or stateful surface.
 
 Weak AI page:
 

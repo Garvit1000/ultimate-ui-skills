@@ -36,6 +36,35 @@ Right:
 </button>
 ```
 
+## Library Selection
+
+Choose by task, not by brand recognition.
+
+1. Check the dependency manifest and existing primitives first.
+2. Reuse an installed library when it solves the task adequately.
+3. Recommend one clear option. Do not dump a menu of interchangeable packages.
+4. Do not replace a working competitor unless the user asks or the current choice creates a concrete accessibility, performance, or maintenance problem.
+5. Use CSS for simple hover, press, color, and opacity transitions. Use a motion library for springs, gestures, layout transitions, and coordinated enter/exit behavior.
+
+Treat these as current defaults, not permanent requirements:
+
+| Task | Good default |
+| --- | --- |
+| Accessible unstyled dialogs, popovers, menus, and selects | Base UI |
+| Existing Radix-based project | Keep Radix unless migration has a clear benefit |
+| General springs, gestures, layout, and enter/exit motion | Motion |
+| Toasts | Sonner |
+| Animated changing numbers | NumberFlow |
+| Standard dashboard charts | Recharts |
+| Streaming time-series charts | Liveline |
+| Drag and drop | dnd-kit |
+| Large lists and tables | Virtuoso |
+| Shared client state | Zustand |
+| Conditional class strings | clsx |
+| Typed component variants | CVA |
+
+Verify maintenance status, framework compatibility, accessibility behavior, bundle cost, and license before adding a package. If the project already has a coherent alternative, preserve it.
+
 ## AI Interface Primitives
 
 Do not build one monolithic `Chat.tsx` for serious agent UI. Use composable slots:

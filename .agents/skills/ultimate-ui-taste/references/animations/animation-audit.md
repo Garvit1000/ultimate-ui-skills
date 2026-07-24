@@ -25,6 +25,19 @@ Review each confirmed issue against these categories:
 7. Cohesion: consolidate near-duplicate timing values and match the product personality.
 8. Missed opportunities: identify a few jarring state changes or rare moments where motion would clarify behavior.
 
+## Opportunity Gate
+
+Use this gate when the user asks what should animate or wants the interface to feel more alive. Reject most candidates.
+
+1. Frequency: reject movement for keyboard-driven or constant actions. Keep frequent interactions nearly instant. Spend the delight budget on rare or first-time moments.
+2. Purpose: require feedback, spatial consistency, state indication, explanation, or prevention of a jarring change. "It looks cool" is not a purpose.
+3. Speed: reject ideas that only work as slow spectacle. Normal UI motion should stay within the budgets in `emil-motion.md`.
+4. Function: reject decorative movement on information the user must read, compare, or act on.
+
+Return at most 5-7 high-confidence opportunities for a whole product and fewer for one screen. For each, include location, current behavior, purpose, frequency, exact motion, and reduced-motion behavior.
+
+Always include 2-5 rejected candidates for a broad opportunity review. Name the location and the gate that rejected each one. This proves restraint and prevents an animation wishlist. If nothing survives, say that the interface does not need more motion.
+
 ## Evidence And Priority
 
 - Re-read every cited location before reporting it. Reject findings that are intentional, duplicated, exempt, or already handled by a local convention.

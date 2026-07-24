@@ -42,8 +42,18 @@ Avoid `ease-in` for normal UI entrance. It hides movement at the moment users ar
 ## Right: Origin-Aware Popover
 
 ```css
+/* Base UI */
 .popover-content {
+  transform-origin: var(--transform-origin);
+}
+
+/* Radix */
+.radix-popover-content {
   transform-origin: var(--radix-popover-content-transform-origin);
+}
+
+.popover-content,
+.radix-popover-content {
   opacity: 1;
   transform: scale(1) translateY(0);
   transition:
@@ -52,7 +62,8 @@ Avoid `ease-in` for normal UI entrance. It hides movement at the moment users ar
 }
 
 .popover-content[data-starting-style],
-.popover-content[data-ending-style] {
+.popover-content[data-ending-style],
+.radix-popover-content[data-state="closed"] {
   opacity: 0;
   transform: scale(0.96) translateY(-2px);
 }
@@ -68,7 +79,7 @@ Wrong:
 }
 ```
 
-Why: popovers are anchored to triggers; `scale(0)` appears from nowhere; `ease-in` feels delayed; `transition: all` is imprecise.
+Why: popovers are anchored to triggers; `scale(0)` appears from nowhere; `ease-in` feels delayed; `transition: all` is imprecise. Use the origin variable supplied by the project's primitive library instead of hardcoding one package.
 
 ## Right: Press Feedback
 
